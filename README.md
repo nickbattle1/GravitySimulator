@@ -70,6 +70,12 @@ The simulation starts with the solar system by default.
   <img src="assets/program.png" alt="Solar system simulation" width="700">
 </p>
 
+Zoom in on any planet to observe closer orbital interactions, such as the Moon orbiting the Earth.
+
+<p align="center">
+  <img src="assets/earth-moon.png" alt="Earth-Moon orbit" width="700">
+</p>
+
 ---
 
 ## Controls
@@ -121,10 +127,6 @@ add Asteroid 1e20 300e9 0 0 20e3 255 128 0 3
 ```
 
 This adds a body named "Asteroid" with mass 10²⁰ kg, positioned 300 billion metres along the X axis (Y = 0), moving at 20 km/s along the Y axis (X = 0), with orange colour (RGB 255, 128, 0) and a 3px display radius.
-
-<p align="center">
-  <img src="assets/earth-moon.png" alt="Earth-Moon orbit" width="700">
-</p>
 
 ---
 
