@@ -120,7 +120,7 @@ Press `Enter` to open the command prompt. Available commands:
 add Asteroid 1e20 300e9 0 0 20e3 255 128 0 3
 ```
 
-This adds a body named "Asteroid" with mass 10²⁰ kg at position (300 billion m, 0) with velocity (0, 20 km/s), orange colour, and 3px display radius.
+This adds a body named "Asteroid" with mass 10²⁰ kg, positioned 300 billion metres along the X axis (Y = 0), moving at 20 km/s along the Y axis (X = 0), with orange colour (RGB 255, 128, 0) and a 3px display radius.
 
 <p align="center">
   <img src="assets/earth-moon.png" alt="Earth-Moon orbit" width="700">
