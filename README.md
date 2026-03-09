@@ -8,19 +8,19 @@ A C++ N-body physics simulation that visualises gravitational interactions betwe
 
 ## Features
 
-- **Real SI-unit physics** — All calculations run in metres, m/s, and kg. Rendering converts to screen space only at draw time.
-- **Coupled N-body integration** — All bodies advance together at each integration sub-step, so mutual interactions are computed correctly.
-- **Double-precision physics** — Custom `Vec2` type avoids float precision loss across astronomical scales. SFML floats are only used for final pixel positions.
-- **Three integration methods** — Euler, Velocity Verlet (default, symplectic), and Runge-Kutta 4.
-- **Gravitational softening** — ε² softening prevents numerical singularities during close encounters.
-- **Fixed-timestep accumulator** — Physics steps are decoupled from frame rate, preventing simulation instability from frame drops.
-- **Camera system** — Pan with arrow keys, zoom with scroll wheel or +/- keys. Scroll zoom targets the mouse cursor position.
-- **Simulation speed control** — Speed up or slow down with `,` / `.` keys, or set an exact multiplier via command.
-- **Collision handling** — Optional momentum-conserving mergers with mass-weighted colour blending.
-- **Motion trails** — Circular `std::deque` buffer with configurable length and fading effect.
-- **On-screen command mode** — Press Enter to open a command overlay showing all available commands in a table. Feedback is displayed on screen.
-- **Font fallback chain** — Tries multiple system font paths across Linux, macOS, and Windows.
-- **Pre-configured scenarios** — Solar system (Sun through Neptune + Moon), binary star system, and two-body orbit.
+- **Real SI-unit physics**: All calculations run in metres, m/s, and kg. Rendering converts to screen space only at draw time.
+- **Coupled N-body integration**: All bodies advance together at each integration sub-step, so mutual interactions are computed correctly.
+- **Double-precision physics**: Custom `Vec2` type avoids float precision loss across astronomical scales. SFML floats are only used for final pixel positions.
+- **Three integration methods**: Euler, Velocity Verlet (default, symplectic), and Runge-Kutta 4.
+- **Gravitational softening**: ε² softening prevents numerical singularities during close encounters.
+- **Fixed-timestep accumulator**: Physics steps are decoupled from frame rate, preventing simulation instability from frame drops.
+- **Camera system**: Pan with arrow keys, zoom with scroll wheel or +/- keys. Scroll zoom targets the mouse cursor position.
+- **Simulation speed control**: Speed up or slow down with `,` / `.` keys, or set an exact multiplier via command.
+- **Collision handling**: Optional momentum-conserving mergers with mass-weighted colour blending.
+- **Motion trails**: Circular `std::deque` buffer with configurable length and fading effect.
+- **On-screen command mode**: Press Enter to open a command overlay showing all available commands in a table. Feedback is displayed on screen.
+- **Font fallback chain**: Tries multiple system font paths across Linux, macOS, and Windows.
+- **Pre-configured scenarios**: Solar system (Sun through Neptune + Moon), binary star system, and two-body orbit.
 
 ---
 
@@ -151,7 +151,7 @@ GravitySimulator/
 
 **Physics vs display separation**: All physics runs in real SI units. The `metersPerPixel` camera parameter converts world coordinates to screen pixels only at render time, so gravitational force calculations are physically correct.
 
-**Integration methods**: Euler is fastest but least accurate. Velocity Verlet is the default — it's symplectic, giving good long-term energy conservation for orbital mechanics. RK4 is most accurate for smooth trajectories but most expensive (4x force evaluations per step).
+**Integration methods**: Euler is fastest but least accurate. Velocity Verlet is the default: it's symplectic, giving good long-term energy conservation for orbital mechanics. RK4 is most accurate for smooth trajectories but most expensive (4x force evaluations per step).
 
 **Softening**: A softening length (default 10⁶ m) is added to distance calculations to prevent force singularities. The force law uses the conservative form `G·m·r / (r² + ε²)^(3/2)`, which is the exact gradient of the softened potential, preserving Verlet's symplectic properties.
 
