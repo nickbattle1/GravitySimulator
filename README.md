@@ -3,7 +3,7 @@
 A C++ N-body physics simulation that visualises gravitational interactions between celestial bodies using Newton's laws of universal gravitation, with multiple numerical integration methods and real-time SFML rendering.
 
 <p align="center">
-  <img src="assets/gif.gif" alt="Gravity Simulator demo" width="700">
+  <img src="assets/gif.gif" alt="Gravity Simulator demo" width="100%">
 </p>
 
 ## Features
@@ -67,13 +67,13 @@ make -j$(nproc)
 The simulation starts with the solar system by default.
 
 <p align="center">
-  <img src="assets/program.png" alt="Solar system simulation" width="700">
+  <img src="assets/program.png" alt="Solar system simulation" width="100%">
 </p>
 
 Zoom in on any planet to observe closer orbital interactions, such as the Moon orbiting the Earth.
 
 <p align="center">
-  <img src="assets/earth-moon.png" alt="Earth-Moon orbit" width="700">
+  <img src="assets/earth-moon.png" alt="Earth-Moon orbit" width="100%">
 </p>
 
 ---
@@ -97,7 +97,7 @@ Zoom in on any planet to observe closer orbital interactions, such as the Moon o
 Press `Enter` to open the command prompt. Available commands:
 
 <p align="center">
-  <img src="assets/command-mode.png" alt="Command mode overlay" width="700">
+  <img src="assets/command-mode.png" alt="Command mode overlay" width="100%">
 </p>
 
 | Command | Description |
