@@ -1,0 +1,3 @@
+/mnt/c/Users/Nickb/Downloads/GravitySimulator/build/CMakeFiles/gravitysim.dir
+/mnt/c/Users/Nickb/Downloads/GravitySimulator/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Nickb/Downloads/GravitySimulator/build/CMakeFiles/rebuild_cache.dir
